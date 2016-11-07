@@ -10,7 +10,7 @@ object mainclass extends ExternalCommand {
   def main(args: Array[String]):Unit = {
     type OptionMap = Map[Symbol, String]
     l4j.info("Starting up")
-    this.runCommand("/bin/ls",Seq("ls","-lh"))
+    this.runCommand("/bin/ls",Seq("-lh"))
     l4j.info("main finished")
   }
 
