@@ -26,6 +26,7 @@ trait ExternalCommand {
     true
   }
 
+  /* this does not work, it can't find the PID field */
   def getPID(process:Process):Option[Int] = {
     try {
       localLogger.debug("process type is " + process.getClass.getName)
